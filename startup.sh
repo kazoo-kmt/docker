@@ -1,7 +1,8 @@
 #!/bin/bash
 gem install sinatra
-curl https://raw.githubusercontent.com/tifftalk/docker-sinatra/master/web.rb > /web.rb
-cp /web.rb /usr/src/app/web.rb
+# curl https://raw.githubusercontent.com/tifftalk/docker-sinatra/master/web.rb > /web.rb
+git clone https://github.com/tifftalk/docker-sinatra /project
+mv /project/web.rb /usr/src/app/web.rb
 
 if [ "$RACK_ENV" == "production" ];
 then
