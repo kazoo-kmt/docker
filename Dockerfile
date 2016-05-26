@@ -1,9 +1,9 @@
 FROM ruby:2.3.1
 
-MAINTAINER Kazu Komoto <kazoo.kmt@gmail.com>
+MAINTAINER Andy Tiffany <mister.tiffany@gmail.com>
 
 ENV RACK_ENV production
-ENV MAIN_APP_FILE web.rb
+ENV MAIN_APP_FILE app.rb
 
 RUN mkdir -p /usr/src/app
 RUN apt-get update
